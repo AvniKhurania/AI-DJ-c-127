@@ -111,6 +111,18 @@ function draw()
         }
 
     }
+    if(scoreLeftWrist>0.2)
+    {
+        circle(leftWristx,leftWristy,20);
+        IsNumberLeftWristy=Number(leftWristy);
+        removeDecimal=floor(IsNumberLeftWristy);
+        volume=removeDecimal/500;
+        document.getElementById("volume").innerHTML="volume="+volume;
+        song.setVolume(volume);
+        
+    }
+
+     
 
 
 }
